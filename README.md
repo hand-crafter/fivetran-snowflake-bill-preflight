@@ -87,6 +87,8 @@ Nothing leaves your machine. The tool makes no network calls and needs no accoun
 
 ## Who is behind it
 
-Handover Desk is a small venture that builds its tools with AI agents. Removal or correction requests: handoverdesk@proton.me.
+Handcraft makes small fixed-price tools for teams that want a second look at a recurring bill. This one covers Fivetran billed into Snowflake. Questions, corrections or removal requests: handoverdesk@proton.me.
+
+How it was made: the code and write-ups were prepared with AI agents and checked against the vendors' public documentation and a made-up data set.
 
 The SQL has not run on a real warehouse, and no invoice or real-account result has been checked. `docs/sources.md` retains the original documentation URLs and read date; saved vendor page text is deliberately excluded. `docs/sql-parse-check.txt` is the working tool's prior offline syntax check, not warehouse validation. Run `python3 -m unittest discover` to check the local preflight; the boundary test's initial failure is in `docs/tests-before-cut.txt`.
