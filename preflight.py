@@ -20,6 +20,7 @@ LIMITS = [
     'Prices are customer supplied assumptions, not an invoice guarantee. Warehouse compute, transformations, taxes and other charges are excluded.',
     'Coverage is customer attested; earliest and latest activity do not prove complete history. Missing privileges, export limits, latency, name changes and unsupported operations can hide reads.',
     'A same-month log match confirms co-occurrence only; cause and table attribution remain unproven.',
+    'In our own trial run (one Snowflake trial account, 12 November 2026) a query that only counted rows (SELECT COUNT(*)) left no entry in object-level read history, while queries that selected columns did. A table that people only ever count can therefore appear as no reads observed.',
     'Renewal savings assume the same rows, rates and discount, with the current minimum/fixed commitment removed and renegotiable. No refund of a current commitment is assumed.'
 ]
 REQUIRED = {
