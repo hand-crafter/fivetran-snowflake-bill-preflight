@@ -1,0 +1,348 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Local bill audit</title><style>body{font:16px/1.55 system-ui,sans-serif;color:#162d36;background:#f6f5ef;margin:0;padding:24px}main{max-width:1160px;margin:auto}h1,h2{line-height:1.2}h1{font-size:36px}aside{border:2px solid #a65f16;padding:16px;background:#fff4dc}table{border-collapse:collapse;font-size:14px;width:100%}td,th{padding:8px;border-bottom:1px solid #cbd4d4;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#e3edeb}section{margin:30px 0;overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}.notice{font-weight:bold;color:#82501c}li{margin:5px 0}@media print{body{padding:0}section{overflow:visible}tr{break-inside:avoid}}</style><main>
+<aside aria-label="Paid report example"><strong>Example of the paid report, generated from made-up data. The code that produces it is not in this repository.</strong></aside>
+<p class="notice">made-up data, no real account</p>
+<h1>Local bill audit · full</h1>
+<aside><h2>Limits</h2><ul><li>No reads observed is evidence within a covered window, never proof that a table has no purpose.</li><li>Indirect readers this tool cannot see include shares, quarterly jobs, retention duties, and reads outside the exported account or window.</li><li>Other automated readers (transformation jobs, backup or copy jobs, catalog or quality scanners) still count as reads and may hide tables with no business readers; customers may add those users to the same warehouse exclusion list.</li><li>Every removal is a candidate, confirm with the table owner. No automatic changes are suggested or made.</li><li>Lowering sync frequency alone is not a saving.</li><li>Prices are customer supplied assumptions, not an invoice guarantee. Warehouse compute, transformations, taxes and other charges are excluded.</li><li>Coverage is customer attested; earliest and latest activity do not prove complete history. Missing privileges, export limits, latency, name changes and unsupported operations can hide reads.</li><li>A same-month log match confirms co-occurrence only; cause and table attribution remain unproven.</li><li>Renewal savings assume the same rows, rates and discount, with the current minimum/fixed commitment removed and renegotiable. No refund of a current commitment is assumed.</li></ul></aside>
+<section><h2>Coverage</h2>
+<pre>{
+  &quot;billing&quot;: {
+    &quot;start&quot;: &quot;2026-08-01&quot;,
+    &quot;end&quot;: &quot;2026-10-31&quot;,
+    &quot;complete&quot;: true,
+    &quot;present&quot;: true,
+    &quot;records&quot;: 11040,
+    &quot;observed_days&quot;: 92,
+    &quot;observed_start&quot;: &quot;2026-08-01&quot;,
+    &quot;observed_end&quot;: &quot;2026-10-31&quot;,
+    &quot;declared_days&quot;: 92
+  },
+  &quot;connections&quot;: {
+    &quot;present&quot;: true,
+    &quot;records&quot;: 6,
+    &quot;observed_days&quot;: 0,
+    &quot;observed_start&quot;: null,
+    &quot;observed_end&quot;: null
+  },
+  &quot;mapping&quot;: {
+    &quot;present&quot;: true,
+    &quot;records&quot;: 60,
+    &quot;observed_days&quot;: 0,
+    &quot;observed_start&quot;: null,
+    &quot;observed_end&quot;: null
+  },
+  &quot;logs&quot;: {
+    &quot;start&quot;: &quot;2026-08-01&quot;,
+    &quot;end&quot;: &quot;2026-10-31&quot;,
+    &quot;complete&quot;: true,
+    &quot;present&quot;: true,
+    &quot;records&quot;: 2,
+    &quot;observed_days&quot;: 1,
+    &quot;observed_start&quot;: &quot;2026-10-05&quot;,
+    &quot;observed_end&quot;: &quot;2026-10-05&quot;,
+    &quot;declared_days&quot;: 92
+  },
+  &quot;reads&quot;: {
+    &quot;start&quot;: &quot;2026-08-01&quot;,
+    &quot;end&quot;: &quot;2026-10-31&quot;,
+    &quot;complete&quot;: true,
+    &quot;present&quot;: true,
+    &quot;records&quot;: 104,
+    &quot;observed_days&quot;: 10,
+    &quot;observed_start&quot;: &quot;2026-08-03&quot;,
+    &quot;observed_end&quot;: &quot;2026-10-20&quot;,
+    &quot;declared_days&quot;: 92,
+    &quot;skipped_object_rows&quot;: 0,
+    &quot;skipped_object_samples&quot;: [],
+    &quot;skipped_object_note&quot;: &quot;Skipped names cannot be matched; a mapped table whose real name needs quoting could be affected.&quot;,
+    &quot;excluded_users_declared&quot;: true
+  },
+  &quot;queries&quot;: {
+    &quot;start&quot;: &quot;2026-08-01&quot;,
+    &quot;end&quot;: &quot;2026-10-31&quot;,
+    &quot;complete&quot;: true,
+    &quot;present&quot;: true,
+    &quot;records&quot;: 104,
+    &quot;observed_days&quot;: 10,
+    &quot;observed_start&quot;: &quot;2026-08-03&quot;,
+    &quot;observed_end&quot;: &quot;2026-10-20&quot;,
+    &quot;declared_days&quot;: 92
+  },
+  &quot;coverage&quot;: {
+    &quot;present&quot;: true,
+    &quot;records&quot;: 4,
+    &quot;observed_days&quot;: 0,
+    &quot;observed_start&quot;: null,
+    &quot;observed_end&quot;: null
+  }
+}</pre>
+</section>
+<section><h2>Tables</h2>
+<table><thead><tr><th>destination id</th><th>connection name</th><th>schema name</th><th>table name</th><th>month</th><th>paid rows</th></tr></thead><tbody>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T00</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T01</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T02</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T03</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T04</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T05</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T06</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T07</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T08</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T09</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T10</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T11</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T12</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T13</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T14</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T15</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T16</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T17</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T18</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T19</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T20</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T21</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T22</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T23</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T24</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T25</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T26</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T27</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T28</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T29</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T30</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T31</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T32</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T33</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T34</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T35</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T36</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T37</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T38</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T39</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T40</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T41</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T42</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T43</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T44</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T45</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T46</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T47</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T48</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T49</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T50</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T51</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T52</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T53</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T54</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T55</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T56</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T57</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T58</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T59</td><td>2026-08</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T00</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T01</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T02</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T03</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T04</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T05</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T06</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T07</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T08</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T09</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T10</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T11</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T12</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T13</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T14</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T15</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T16</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T17</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T18</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T19</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T20</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T21</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T22</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T23</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T24</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T25</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T26</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T27</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T28</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T29</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T30</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T31</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T32</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T33</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T34</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T35</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T36</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T37</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T38</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T39</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T40</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T41</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T42</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T43</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T44</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T45</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T46</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T47</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T48</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T49</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T50</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T51</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T52</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T53</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T54</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T55</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T56</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T57</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T58</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T59</td><td>2026-09</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T20</td><td>2026-10</td><td>300000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T30</td><td>2026-10</td><td>300000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T40</td><td>2026-10</td><td>300000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T00</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T01</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T02</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T03</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T04</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T05</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T06</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T07</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T08</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T09</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T10</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T11</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T12</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T13</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T14</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T15</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T16</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T17</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T18</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T19</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T21</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T22</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T23</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T24</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T25</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T26</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T27</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T28</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T29</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T31</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T32</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T33</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T34</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T35</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T36</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T37</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T38</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T39</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T41</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T42</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T43</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T44</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T45</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T46</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T47</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T48</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T49</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T50</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T51</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T52</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T53</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T54</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T55</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T56</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T57</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T58</td><td>2026-10</td><td>100000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>S5</td><td>T59</td><td>2026-10</td><td>100000</td></tr>
+</tbody></table>
+</section>
+<section><h2>Connections</h2>
+<table><thead><tr><th>destination id</th><th>connection name</th><th>month</th><th>paid rows</th></tr></thead><tbody>
+<tr><td>d0</td><td>connection_0</td><td>2026-08</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-08</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>2026-08</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>2026-08</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>2026-08</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>2026-08</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>2026-09</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-09</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>2026-09</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>2026-09</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>2026-09</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>2026-09</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_2</td><td>2026-10</td><td>1200000</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>2026-10</td><td>1200000</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>2026-10</td><td>1200000</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>2026-10</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-10</td><td>1000000</td></tr>
+<tr><td>d0</td><td>connection_5</td><td>2026-10</td><td>1000000</td></tr>
+</tbody></table>
+</section>
+<section><h2>Free rows</h2>
+<p>1800000</p>
+</section>
+<section><h2>Total rows</h2>
+<p>20400000</p>
+</section>
+<section><h2>Free share</h2>
+<p>0.088235</p>
+</section>
+<section><h2>Read evidence</h2>
+<p>object-level ACCESS_HISTORY, subject to documented exclusions</p>
+</section>
+<section><h2>Full report coverage</h2>
+<p>Full report can screen no-observed-read candidates within the attested read window; pricing also requires complete billing months, verified mappings and customer terms. Spikes need adjacent complete billing months; logs may cover only seven days after initial sync. Log absence cannot rule out an event.</p>
+</section>
+<section><h2>Candidates</h2>
+<table><thead><tr><th>destination id</th><th>connection name</th><th>schema name</th><th>table name</th><th>object name</th><th>finding</th><th>window start</th><th>window end</th><th>confidence</th></tr></thead><tbody>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T00</td><td>DEMO.S0.T00</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T01</td><td>DEMO.S0.T01</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T02</td><td>DEMO.S0.T02</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>S0</td><td>T03</td><td>DEMO.S0.T03</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T10</td><td>DEMO.S1.T10</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T11</td><td>DEMO.S1.T11</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T12</td><td>DEMO.S1.T12</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>S1</td><td>T13</td><td>DEMO.S1.T13</td><td>no reads observed in 92 days; candidate, confirm with the table owner</td><td>2026-08-01</td><td>2026-10-31</td><td>object-level ACCESS_HISTORY, subject to documented exclusions</td></tr>
+</tbody></table>
+</section>
+<section><h2>Spikes</h2>
+<table><thead><tr><th>destination id</th><th>connection name</th><th>schema name</th><th>table name</th><th>month</th><th>prior paid rows</th><th>paid rows</th><th>event ids</th><th>event names</th><th>confidence</th><th>finding</th></tr></thead><tbody>
+<tr><td>d0</td><td>connection_2</td><td>S2</td><td>T20</td><td>2026-10</td><td>100000</td><td>300000</td><td>[&quot;e2&quot;]</td><td>[&quot;status&quot;]</td><td>confirmed by evidence</td><td>Same connection/month event co-occurrence confirmed; cause unproven; no table attribution.</td></tr>
+<tr><td>d0</td><td>connection_3</td><td>S3</td><td>T30</td><td>2026-10</td><td>100000</td><td>300000</td><td>[&quot;e3&quot;]</td><td>[&quot;status&quot;]</td><td>confirmed by evidence</td><td>Same connection/month event co-occurrence confirmed; cause unproven; no table attribution.</td></tr>
+<tr><td>d0</td><td>connection_4</td><td>S4</td><td>T40</td><td>2026-10</td><td>100000</td><td>300000</td><td>[]</td><td>[]</td><td>unexplained</td><td>No matching event in exported logs; cause unproven; missing log history may hide evidence.</td></tr>
+</tbody></table>
+</section>
+<section><h2>Scenarios</h2>
+<table><thead><tr><th>destination id</th><th>connection name</th><th>month</th><th>kind</th><th>tables</th><th>current rows</th><th>removed rows</th><th>after rows</th><th>current cost</th><th>after cost</th><th>near term saving</th><th>renewal saving</th><th>finding</th></tr></thead><tbody>
+<tr><td>d0</td><td>connection_0</td><td>2026-10</td><td>individual</td><td>[&quot;T00&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>1000.00</td><td>1000.00</td><td>0.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>2026-10</td><td>individual</td><td>[&quot;T01&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>1000.00</td><td>1000.00</td><td>0.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>2026-10</td><td>individual</td><td>[&quot;T02&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>1000.00</td><td>1000.00</td><td>0.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>2026-10</td><td>individual</td><td>[&quot;T03&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>1000.00</td><td>1000.00</td><td>0.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_0</td><td>2026-10</td><td>combined</td><td>[&quot;T00&quot;, &quot;T01&quot;, &quot;T02&quot;, &quot;T03&quot;]</td><td>1000000</td><td>400000</td><td>600000</td><td>1000.00</td><td>1000.00</td><td>0.00</td><td>270.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-10</td><td>individual</td><td>[&quot;T10&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>819.00</td><td>774.00</td><td>45.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-10</td><td>individual</td><td>[&quot;T11&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>819.00</td><td>774.00</td><td>45.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-10</td><td>individual</td><td>[&quot;T12&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>819.00</td><td>774.00</td><td>45.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-10</td><td>individual</td><td>[&quot;T13&quot;]</td><td>1000000</td><td>100000</td><td>900000</td><td>819.00</td><td>774.00</td><td>45.00</td><td>45.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>2026-10</td><td>combined</td><td>[&quot;T10&quot;, &quot;T11&quot;, &quot;T12&quot;, &quot;T13&quot;]</td><td>1000000</td><td>400000</td><td>600000</td><td>819.00</td><td>549.00</td><td>270.00</td><td>270.00</td><td>candidate, confirm with the table owner; combined and individual scenarios are alternatives, never additive</td></tr>
+</tbody></table>
+</section>
+<section><h2>Scenario comparisons</h2>
+<table><thead><tr><th>destination id</th><th>connection name</th><th>standalone near term sum</th><th>combined near term saving</th><th>finding</th></tr></thead><tbody>
+<tr><td>d0</td><td>connection_0</td><td>0.00</td><td>0.00</td><td>Standalone estimates each start from current rows; their sum is for comparison only, not sequential removal savings. Combined and individual scenarios are alternatives, never additive.</td></tr>
+<tr><td>d0</td><td>connection_1</td><td>180.00</td><td>270.00</td><td>Standalone estimates each start from current rows; their sum is for comparison only, not sequential removal savings. Combined and individual scenarios are alternatives, never additive.</td></tr>
+</tbody></table>
+</section>
+<section><h2>Unmapped paid tables</h2>
+<p>No findings with the available coverage.</p>
+</section>
+<section><h2>Pricing currency</h2>
+<p>USD</p>
+</section>
+<section><h2>Scenario month</h2>
+<p>2026-10</p>
+</section>
+</main></html>

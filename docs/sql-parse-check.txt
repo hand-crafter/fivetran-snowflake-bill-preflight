@@ -1,0 +1,15 @@
+Offline SQL syntax check — 2026-11-12
+Parser: sqlglot 30.31.0
+Dialect: snowflake
+Environment: /tmp/fivetran-bill-audit-fix1-venv (development only)
+Command: sqlglot.parse(file.read_text(), read="snowflake", error_level=ErrorLevel.RAISE)
+Error handling self-check: malformed SELECT raises ParseError.
+No SQL executed; syntax parsing does not validate columns, privileges or warehouse behavior.
+
+sql/billing.sql: PASS (1 query statement)
+sql/connections.sql: PASS (1 query statement)
+sql/coverage.sql: PASS (1 query statement)
+sql/logs.sql: PASS (1 query statement)
+sql/mapping.sql: PASS (1 query statement)
+sql/reads-object.sql: PASS (1 query statement)
+sql/reads-query.sql: PASS (1 query statement)

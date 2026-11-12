@@ -1,0 +1,30 @@
+# Public documentation sources
+
+Read on **2026-11-12**. Only public vendor documentation was used for vendor facts. Robots files on both hosts were read first; these paths were permitted. Requests were sequential, separated by at least 1.1 seconds. Extracted page text is preserved in reference-0.txt through reference-5.txt in the order below. No accounts, APIs or warehouses were accessed.
+
+| Reference | Facts read and used |
+|---|---|
+| [Snowflake ACCESS_HISTORY](https://docs.snowflake.com/en/sql-reference/account-usage/access_history) | **Enterprise Edition or higher required**. Account Usage retains 365 days. Latency up to 180 minutes. Columns query_id, query_start_time, base_objects_accessed, direct_objects_accessed; array objects expose objectName and objectDomain. Base objects expose reads behind views. Failed queries are excluded. There are unsupported operations and truncation limits; this is not proof of all readers. |
+| [Snowflake QUERY_HISTORY](https://docs.snowflake.com/en/sql-reference/account-usage/query_history) | Account Usage retains 365 days, latency up to 45 minutes. Columns query_id, query_text, database_name, schema_name, start_time, execution_status. Query text has a 100K character limit. Information Schema's similarly named function has only seven days. Hybrid-table query recording has exclusions. |
+| [Snowflake Account Usage overview](https://docs.snowflake.com/en/sql-reference/account-usage) | Edition column marks ACCESS_HISTORY Enterprise or higher, QUERY_HISTORY has no edition restriction; footnote says views are available to all accounts unless otherwise noted. Thus QUERY_HISTORY is the Standard Edition fallback, subject to privileges. The SNOWFLAKE database being visible does not imply the role can read every Account Usage view. |
+| [Fivetran Platform table reference](https://fivetran.com/docs/logs/fivetran-platform/table-reference) | INCREMENTAL_MAR: destination_id, connection_name, schema_name, table_name, measured_date, sync_type, free_type, incremental_rows, updated_at. PAID is a documented free_type; all other documented values are free categories. CONNECTION: connection_id, group_id, connection_name (used for joins). LOG: id, time, connection_id, event, message_event, message_data, sync_id. USAGE_COST: measured_month, group_id, amount. CREDITS_USED and TRANSFORMATION_RUNS exist. SOURCE_TABLE includes disabled/historical tables and is not a current enablement list. |
+| [Fivetran Platform overview](https://fivetran.com/docs/logs/fivetran-platform) | Metadata arrives in the customer's destination. Initial sync and re-sync backfill only seven days of LOG / CONNECTOR_SDK_LOG. CONNECTION replaces CONNECTOR; connection_name replaces deprecated connector_name. |
+| [Fivetran tracking and optimizing usage](https://fivetran.com/docs/core-concepts/usage-based-pricing/tracking-and-optimizing-usage) | Platform connector MAR is free; warehouse costs can still apply. Dashboard/sample queries already provide table-level usage. Sync frequency alone makes no difference to MAR. A pause followed by resume can increase MAR; this supports a possible mechanism, never causal proof for a particular spike. Current usage curves apply per connection; older account-level contracts require different modelling. |
+
+## Implementation choices, not vendor facts
+
+The customer supplies all prices; no complete rate card was read. The tool supports marginal graduated tiers, a conditional base charge, discount, minimum bill and a fixed commitment per connection. It does not claim to model every contract.
+
+A spike means at least 2x the previous calendar month's paid rows with positive prior rows. A log in the same connection and month confirms **co-occurrence only**, never the cause or table attribution. No event name is assumed to be a causal signal. A customer-confirmed pause/resume note can be described as consistent with documented behaviour, but this version does not infer such a note from arbitrary log text.
+
+Query-text fallback matches relation references after FROM/JOIN using exact qualified identifiers or query database/schema context. It removes literals and comments; it is deliberately not a complete SQL parser. It misses view lineage, dynamic SQL and many complex statements. Ambiguity and absent coverage must reduce confidence, never imply certainty.
+
+## Fix round 1: saved Snowflake evidence (2026-11-12)
+
+No new vendor pages were fetched. Line references below use the saved `reference-0.txt` from the ACCESS_HISTORY URL above.
+
+- `reference-0.txt:1355-1369` (“Read query notes”) includes DML that reads data, including UPDATE, DELETE and MERGE. This supports excluding loader users before export; it does not establish that every MERGE always reads its target. The read-data qualification is at line 1368. COPY is also conditional: lines 1364-1367 say it is logged only when a table is the source in a FROM clause.
+- `reference-0.txt:744-751` defines `objectDomain` and distinguishes functions. The table/view domain values at `reference-0.txt:1759` are `TABLE | EXTERNAL TABLE | VIEW | MATERIALIZED VIEW | ICEBERG TABLE` (listed in the DDL operations section). Both flattened read-object arrays use this explicit allowlist, normalized with UPPER; the saved example at lines 332-336 uses mixed-case `Table`. This is an export filter, not a claim that every kind is always recorded on reads.
+- `reference-0.txt:559` and `reference-1.txt:340` document `user_name` in the respective histories. Each query filters it inside Snowflake and exports only a constant `excluded_users_declared`, never a user-name column.
+
+The exclusion declaration, placeholder mapping error, no-overlap/empty-history suppression, and skipped-name count are local defensive choices. A yes declaration cannot verify that the customer chose all the correct users. Header-only history cannot carry a per-row declaration; with the header present it is suppressed as empty. Skipped names can still hide reads of mapped tables and require human review.

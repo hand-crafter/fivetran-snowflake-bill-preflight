@@ -1,0 +1,1643 @@
+{
+  "level": "preflight",
+  "sample_notice": "made-up data, no real account",
+  "limits": [
+    "No reads observed is evidence within a covered window, never proof that a table has no purpose.",
+    "Indirect readers this tool cannot see include shares, quarterly jobs, retention duties, and reads outside the exported account or window.",
+    "Other automated readers (transformation jobs, backup or copy jobs, catalog or quality scanners) still count as reads and may hide tables with no business readers; customers may add those users to the same warehouse exclusion list.",
+    "Every removal is a candidate, confirm with the table owner. No automatic changes are suggested or made.",
+    "Lowering sync frequency alone is not a saving.",
+    "Prices are customer supplied assumptions, not an invoice guarantee. Warehouse compute, transformations, taxes and other charges are excluded.",
+    "Coverage is customer attested; earliest and latest activity do not prove complete history. Missing privileges, export limits, latency, name changes and unsupported operations can hide reads.",
+    "A same-month log match confirms co-occurrence only; cause and table attribution remain unproven.",
+    "Renewal savings assume the same rows, rates and discount, with the current minimum/fixed commitment removed and renegotiable. No refund of a current commitment is assumed."
+  ],
+  "coverage": {
+    "billing": {
+      "start": "2026-08-01",
+      "end": "2026-10-31",
+      "complete": true,
+      "present": true,
+      "records": 11040,
+      "observed_days": 92,
+      "observed_start": "2026-08-01",
+      "observed_end": "2026-10-31",
+      "declared_days": 92
+    },
+    "connections": {
+      "present": true,
+      "records": 6,
+      "observed_days": 0,
+      "observed_start": null,
+      "observed_end": null
+    },
+    "mapping": {
+      "present": true,
+      "records": 60,
+      "observed_days": 0,
+      "observed_start": null,
+      "observed_end": null
+    },
+    "logs": {
+      "start": "2026-08-01",
+      "end": "2026-10-31",
+      "complete": true,
+      "present": true,
+      "records": 2,
+      "observed_days": 1,
+      "observed_start": "2026-10-05",
+      "observed_end": "2026-10-05",
+      "declared_days": 92
+    },
+    "reads": {
+      "start": "2026-08-01",
+      "end": "2026-10-31",
+      "complete": true,
+      "present": true,
+      "records": 104,
+      "observed_days": 10,
+      "observed_start": "2026-08-03",
+      "observed_end": "2026-10-20",
+      "declared_days": 92,
+      "skipped_object_rows": 0,
+      "skipped_object_samples": [],
+      "skipped_object_note": "Skipped names cannot be matched; a mapped table whose real name needs quoting could be affected.",
+      "excluded_users_declared": true
+    },
+    "queries": {
+      "start": "2026-08-01",
+      "end": "2026-10-31",
+      "complete": true,
+      "present": true,
+      "records": 104,
+      "observed_days": 10,
+      "observed_start": "2026-08-03",
+      "observed_end": "2026-10-20",
+      "declared_days": 92
+    },
+    "coverage": {
+      "present": true,
+      "records": 4,
+      "observed_days": 0,
+      "observed_start": null,
+      "observed_end": null
+    }
+  },
+  "tables": [
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T00",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T01",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T02",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T03",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T04",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T05",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T06",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T07",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T08",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T09",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T10",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T11",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T12",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T13",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T14",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T15",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T16",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T17",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T18",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T19",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T20",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T21",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T22",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T23",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T24",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T25",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T26",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T27",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T28",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T29",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T30",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T31",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T32",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T33",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T34",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T35",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T36",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T37",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T38",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T39",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T40",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T41",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T42",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T43",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T44",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T45",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T46",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T47",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T48",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T49",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T50",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T51",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T52",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T53",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T54",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T55",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T56",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T57",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T58",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T59",
+      "month": "2026-08",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T00",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T01",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T02",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T03",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T04",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T05",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T06",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T07",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T08",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T09",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T10",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T11",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T12",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T13",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T14",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T15",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T16",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T17",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T18",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T19",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T20",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T21",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T22",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T23",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T24",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T25",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T26",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T27",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T28",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T29",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T30",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T31",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T32",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T33",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T34",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T35",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T36",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T37",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T38",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T39",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T40",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T41",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T42",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T43",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T44",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T45",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T46",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T47",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T48",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T49",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T50",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T51",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T52",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T53",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T54",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T55",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T56",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T57",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T58",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T59",
+      "month": "2026-09",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T20",
+      "month": "2026-10",
+      "paid_rows": 300000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T30",
+      "month": "2026-10",
+      "paid_rows": 300000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T40",
+      "month": "2026-10",
+      "paid_rows": 300000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T00",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T01",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T02",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T03",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T04",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T05",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T06",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T07",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T08",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "schema_name": "S0",
+      "table_name": "T09",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T10",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T11",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T12",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T13",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T14",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T15",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T16",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T17",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T18",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "schema_name": "S1",
+      "table_name": "T19",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T21",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T22",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T23",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T24",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T25",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T26",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T27",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T28",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "schema_name": "S2",
+      "table_name": "T29",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T31",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T32",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T33",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T34",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T35",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T36",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T37",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T38",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "schema_name": "S3",
+      "table_name": "T39",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T41",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T42",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T43",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T44",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T45",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T46",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T47",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T48",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "schema_name": "S4",
+      "table_name": "T49",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T50",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T51",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T52",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T53",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T54",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T55",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T56",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T57",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T58",
+      "month": "2026-10",
+      "paid_rows": 100000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "schema_name": "S5",
+      "table_name": "T59",
+      "month": "2026-10",
+      "paid_rows": 100000
+    }
+  ],
+  "connections": [
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "month": "2026-08",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "month": "2026-08",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "month": "2026-08",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "month": "2026-08",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "month": "2026-08",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "month": "2026-08",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "month": "2026-09",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "month": "2026-09",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "month": "2026-09",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "month": "2026-09",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "month": "2026-09",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "month": "2026-09",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_2",
+      "month": "2026-10",
+      "paid_rows": 1200000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_3",
+      "month": "2026-10",
+      "paid_rows": 1200000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_4",
+      "month": "2026-10",
+      "paid_rows": 1200000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_0",
+      "month": "2026-10",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_1",
+      "month": "2026-10",
+      "paid_rows": 1000000
+    },
+    {
+      "destination_id": "d0",
+      "connection_name": "connection_5",
+      "month": "2026-10",
+      "paid_rows": 1000000
+    }
+  ],
+  "free_rows": 1800000,
+  "total_rows": 20400000,
+  "free_share": "0.088235",
+  "read_evidence": "object-level ACCESS_HISTORY, subject to documented exclusions",
+  "full_report_coverage": "Full report can screen no-observed-read candidates within the attested read window; pricing also requires complete billing months, verified mappings and customer terms. Spikes need adjacent complete billing months; logs may cover only seven days after initial sync. Log absence cannot rule out an event."
+}

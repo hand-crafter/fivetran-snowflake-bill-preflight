@@ -1,0 +1,22 @@
+test_no_paid_logic_or_sections (tests.test_boundary.PublicBoundaryTests.test_no_paid_logic_or_sections) ... FAIL
+
+======================================================================
+FAIL: test_no_paid_logic_or_sections (tests.test_boundary.PublicBoundaryTests.test_no_paid_logic_or_sections)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./tests/test_boundary.py", line 19, in test_no_paid_logic_or_sections
+    self.assertEqual(identifiers, [], 'paid code identifiers remain')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['candidates', 'spikes', 'scenarios', 'scenario_comparisons'] != []
+
+First list contains 4 additional elements.
+First extra element 0:
+'candidates'
+
+- ['candidates', 'spikes', 'scenarios', 'scenario_comparisons']
++ [] : paid code identifiers remain
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)
