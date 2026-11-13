@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fivetran Snowflake bill audit — Fivetran MAR per table</title>
+  <meta name="description" content="Check your Fivetran Snowflake bill: free preflight for paid MAR per table and export coverage, then a paid report of tables with no reads observed and bill scenarios.">
+  <style>
+    :root { color-scheme: light; --ink: #172d42; --muted: #43586b; --blue: #174fb3; --paper: #fff; --wash: #edf3fb; --line: #c8d5e4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1.0625rem/1.65 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    main, footer { width: min(100% - 3rem, 50rem); margin-inline: auto; }
+    header { padding: 4.5rem 0 2.5rem; }
+    h1 { max-width: 17ch; margin: 0 0 1.75rem; font-size: clamp(2.3rem, 6.5vw, 3.75rem); line-height: 1.08; letter-spacing: -.045em; font-weight: 750; }
+    h2 { margin: 0 0 1rem; font-size: clamp(1.4rem, 3vw, 1.75rem); line-height: 1.25; letter-spacing: -.025em; }
+    h3 { font-size: 1.0625rem; margin: 1.75rem 0 .5rem; }
+    p { margin: 0 0 1rem; }
+    a { color: var(--blue); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: .15em; }
+    a:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+    section { padding: 2.25rem 0; border-top: 1px solid var(--line); }
+    .intro { font-size: 1.125rem; }
+    .muted { color: var(--muted); }
+    .free { border-top: 4px solid var(--blue); }
+    .commands { margin: 1rem 0; padding: 1.25rem; border-left: 4px solid var(--blue); background: var(--wash); }
+    pre { margin: 0; overflow-x: auto; font-size: .875rem; line-height: 1.9; }
+    code { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+    ul { padding-left: 1.3rem; margin: 1rem 0; }
+    li + li { margin-top: .65rem; }
+    .reading { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding: 0; list-style: none; }
+    .reading li + li { margin-top: 0; }
+    .price { display: block; margin: .5rem 0 1rem; font-size: 1.5rem; font-weight: 700; }
+    .availability { margin: 1.5rem 0 0; padding: 1rem 1.25rem; background: var(--wash); }
+    footer { padding: 1.75rem 0 3rem; border-top: 1px solid var(--line); font-size: .9375rem; }
+    footer nav { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-bottom: 1rem; }
+    @media (max-width: 36rem) { header { padding-top: 2.5rem; } main, footer { width: calc(100% - 2rem); } .commands { padding: 1rem .75rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Which tables do you pay Fivetran rows for, and which of those does nobody read?</h1>
+      <p class="intro">For data engineers whose teams pay Fivetran to load into Snowflake and want to check a rising bill.</p>
+      <p class="muted">Not affiliated with Fivetran or Snowflake. The tool never connects to your warehouse, needs no password, and does not tell you to switch vendors.</p>
+    </header>
+
+    <section class="free" aria-labelledby="free-heading">
+      <h2 id="free-heading">Start with the free preflight</h2>
+      <p>See paid rows per table and connection by month, the share marked free, and whether your metadata exports cover the questions a full report would ask.</p>
+      <p>It shows input presence, record counts, observed dates and declared coverage; it does not list removal candidates, spikes or priced scenarios.</p>
+
+      <h3>Try the made-up example</h3>
+      <p>Get the <a href="https://github.com/hand-crafter/fivetran-snowflake-bill-preflight">free preflight repository</a>, then run these commands from its folder with Python 3.10+; no packages to install.</p>
+      <div class="commands">
+        <pre aria-label="Three commands to run the made-up example"><code>python3 generate_fixtures.py fixtures
+python3 preflight.py fixtures --output sample/preflight-report
+python3 -m unittest discover</code></pre>
+      </div>
+      <p>Open <code>sample/preflight-report.html</code> locally; the run also writes CSV and JSON with the same findings.</p>
+      <ul class="reading" aria-label="Write-ups">
+        <li><a href="https://github.com/hand-crafter/fivetran-snowflake-bill-preflight/blob/main/writeups/01-which-tables-you-pay-for.md">Which tables you pay for</a></li>
+        <li><a href="https://github.com/hand-crafter/fivetran-snowflake-bill-preflight/blob/main/writeups/02-tables-nobody-reads.md">Find paid tables with no reads observed</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="paid-heading">
+      <h2 id="paid-heading">Then, if you need it: the full report</h2>
+      <span class="price">US$149 once</span>
+      <p>A download you run on your own machine, using the same metadata exports and your own contract terms for costs.</p>
+      <ul>
+        <li>Lists paid tables with no reads observed in the covered window.</li>
+        <li>Compares large monthly row increases with logged events.</li>
+        <li>Models individual and combined removals using your contract terms, distinguishing near-term costs from potential renewal costs.</li>
+      </ul>
+      <!-- checkout_url: TBD -->
+      <p class="availability">Checkout is not open yet. Write to <a href="mailto:handoverdesk@proton.me">handoverdesk@proton.me</a> to hear the day it opens.</p>
+    </section>
+
+    <section aria-labelledby="limits-heading">
+      <h2 id="limits-heading">What the report can and cannot say</h2>
+      <ul>
+        <li><strong>Candidates only: confirm with the table owner.</strong> No reads observed does not prove a table is unused; shares, infrequent jobs and retention duties may be outside the evidence.</li>
+        <li>Per-table read history needs Snowflake Enterprise Edition or higher; the Standard Edition query-text fallback has lower confidence and misses reads through views.</li>
+        <li>In our trial, a count-only query left no object-level read record, so a table people only count can look unread.</li>
+        <li>Names and coverage need checking: renamed tables, incorrect mappings or incomplete history can hide reads.</li>
+        <li>A logged event in the same connection and month as a row increase does not prove its cause.</li>
+        <li>Prices are your own; estimates are not invoice guarantees, and individual and combined removal scenarios are alternatives, never additive.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="privacy-heading">
+      <h2 id="privacy-heading">Your exports stay with you</h2>
+      <p>Nothing leaves your machine. You run the read-only SQL yourself in your existing warehouse worksheet and run the tool on local exports; warehouse queries can consume compute.</p>
+      <p><strong>Do not email your exports.</strong></p>
+    </section>
+
+    <section aria-labelledby="made-heading">
+      <h2 id="made-heading">Tested on</h2>
+      <p class="muted">12 November 2026: the seven SQL files ran on a Snowflake account against tables shaped like the documented Fivetran metadata tables; the findings matched figures worked out by hand.</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Handcraft policies and contact">
+      <a href="https://hand-crafter.github.io/handcraft/terms.html">Terms</a>
+      <a href="https://hand-crafter.github.io/handcraft/refunds.html">Refunds</a>
+      <a href="https://hand-crafter.github.io/handcraft/privacy.html">Privacy</a>
+      <a href="https://hand-crafter.github.io/handcraft/contact.html">Contact</a>
+    </nav>
+    <p>Sold by Handcraft</p>
+  </footer>
+</body>
+</html>

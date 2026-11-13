@@ -89,6 +89,6 @@ Nothing leaves your machine. The tool makes no network calls and needs no accoun
 
 Handcraft makes small fixed-price tools for teams that want a second look at a recurring bill. This one covers Fivetran billed into Snowflake. Questions, corrections or removal requests: handoverdesk@proton.me.
 
-How it was checked: the code and write-ups were checked against the vendors' public documentation, a made-up data set and one Snowflake trial account.
+Based on the vendors' public documentation.
 
 On 12 November 2026 the seven SQL files each ran without error on one Snowflake trial account that we opened ourselves, against small hand-made tables shaped like the vendor's documented metadata tables. They have not run on real Fivetran data, a real customer's account or an invoice. In that run a query that only counted rows (`SELECT COUNT(*)`) left no entry in object-level read history, while column selects, a read through a view and a loader's MERGE were recorded; so a table that people only ever count can look unread. That is our observation, not a vendor statement. No invoice or real-account result has been checked. `docs/sources.md` retains the original documentation URLs and read date; saved vendor page text is deliberately excluded. `docs/sql-parse-check.txt` is the working tool's prior offline syntax check, not warehouse validation. Run `python3 -m unittest discover` to check the local preflight; the boundary test's initial failure is in `docs/tests-before-cut.txt`.
