@@ -2,7 +2,7 @@
 
 Of the tables you pay to keep loaded, start with those for which no reads were observed lately. Bring that list to each table's owner. A quiet table may support an annual report or a duty that does not involve regular queries. Missing evidence may also reflect incomplete history. The result starts a conversation about purpose and coverage; it is never a verdict that a table can go.
 
-Prepared with AI agents from the vendors' public documentation. Not affiliated with or endorsed by Fivetran or Snowflake.
+Prepared from the vendors' public documentation. Not affiliated with or endorsed by Fivetran or Snowflake.
 
 ## Two places to look for reads
 

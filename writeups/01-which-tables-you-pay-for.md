@@ -2,7 +2,7 @@
 
 A monthly active row (MAR) is a distinct row that Fivetran syncs during a calendar month, identified by its primary key: the value that distinguishes it from other rows. Inserts, updates and captured deletes can count; repeated changes to the same row in that month count once. Rows classified as free are excluded from paid MAR. This measures activity, not every row stored in a table. See Fivetran's [definition and free categories](https://fivetran.com/docs/core-concepts/usage-based-pricing) (read 2026-11-12).
 
-Prepared with AI agents from the vendors' public documentation. Not affiliated with or endorsed by Fivetran or Snowflake.
+Prepared from the vendors' public documentation. Not affiliated with or endorsed by Fivetran or Snowflake.
 
 ## Start with the free numbers
 
